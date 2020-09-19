@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Workshop 2</title>
+		<style>
+			body {
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				color: #333333;
+			}
+		</style>
+		<script>
+			<!-- JavaScript goes here -->
+			function opiskelijaStatus() {
+  var txt;
+  var r = confirm("Jos olet opiskelija, valitse OK");
+  if (r == true) {
+    document.write("Tervetuloa opiskelija!");
+  } else {
+    document.write("Valitettavasti tämä sivu on vain opiskelijoille");
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+		</script>
+</head>
+
+
+<div>
+<h1>Tällä sivustolla selvitämme opiskelijastatuksesi</h1>
+</div>
+<div><hr /></div>
+<p>Ennen kuin etenemme sivulla pidemmälle haluamme selvittää oletko opiskelija.</p>
+<p>Paina alla olevaa nappia päästäksesi eteenpäin.</p>
+<button onclick="opiskelijaStatus()">Opiskelijastatuksen selvitys</button>
+<p id="demo"></p>
+
+</body></html>
